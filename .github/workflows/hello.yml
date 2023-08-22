@@ -9,7 +9,7 @@ jobs:
    runs-on: ubuntu-latest
    steps: 
     - name: Checkout code
-    - uses: actions/checkout@v2
+      uses: actions/checkout@v2
     
     - name: Setup Nodejs
       uses: actions/setup-node@v2
@@ -17,6 +17,6 @@ jobs:
          node-version: '18.17.1'
 
     - name: install dependencies
-    - run: npm install
+      run: npm install
     - name: Run index.js using Nodejs
-    - run: node index.js
+      run: node index.js
